@@ -1,0 +1,65 @@
+#Hierarchy(i,j).skill(1:nc)
+#hierarchy(i,j).age
+#hierarchy(i,j).full
+
+#pyramid(1:levels).competences(1:nc)
+#pyramid(1:levels).size
+#pyramid(1:levels).responsibility
+
+#delta
+#efficiency(t)
+
+#addCompetence
+#addAge
+#makeCompetences
+#bestStrategy
+#globalEfficiency
+#fireCheck
+
+
+
+
+for i=1:levels
+	maxEfficiency(i)=sum(pyramid(i).competences);
+end
+
+
+
+function [hierarchy]=fireCheck(hierarchy,pyramid,maxEfficiency)
+
+
+
+
+
+
+
+
+
+
+function [pyramid]=makeCompetences(pyramid,levels,nc,delta,inicial)
+
+
+pyramid(levels).competences(1:nc)=inicial;
+
+
+	for i=(levels-1):1
+		for(j=1:nc)
+		pyramid(i).competences(j)=pyramid(i+1).competences(j)*delta+rand()*(1-delta);
+		end
+	end
+
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+

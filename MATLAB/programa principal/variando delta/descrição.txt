@@ -1,0 +1,3 @@
+1 - numero de pessoas normal e pouca média, gama = 1/30
+2- numero de pessoas dobradas, gama igual 1/60, muita media, 
+3  numero de pessoas normal e muita média, gama = 1/30
